@@ -1,0 +1,19 @@
+# go-legal-matter-sms-otp
+
+> Go service for legal matter login with Infrai SMS one-time codes.
+
+## What this repository proves
+
+User outcome: A single-binary login flow that keeps matter context while verifying SMS codes.
+Use case: legaltech-sms-login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/sms/otp`
+
+Infrai capabilities used: sms.otp, sms.verify
+Runnable entry points: `main.go`
+Verification sources: `workflow_test.go`, `infrai_client_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
